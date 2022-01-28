@@ -7,6 +7,8 @@ import Form from './components/Form';
 
 import { TodoService } from './services/TodoService';
 
+import  Constants  from 'expo-constants';
+
 export default class App extends React.Component{
     state = {
       list: []
@@ -41,6 +43,9 @@ export default class App extends React.Component{
 }
 const styles = StyleSheet.create({
   container: {
+
+     paddingTop: Constants.statusBarHeight
+     /*flex: 1,
     width: 85,
     height: 60,
     marginTop: 30,
@@ -50,7 +55,7 @@ const styles = StyleSheet.create({
     borderTopStartRadius: 40,
     borderTopEndRadius: 25,
     borderBottomEndRadius: 40,
-    borderBottomStartRadius: 60,
+    borderBottomStartRadius: 60,*/
     
   },
 });
